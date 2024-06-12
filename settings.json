@@ -1,0 +1,86 @@
+{
+  "editor.fontSize": 14.5,
+  "editor.fontFamily": "'Cascadia Mono', Consolas, 'Courier New', monospace",
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "trailing",
+  "editor.minimap.enabled": false,
+  "editor.folding": false,
+  "editor.cursorSurroundingLines": 10,
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "toggle",
+  "window.commandCenter": false,
+  "window.title": "${folderName}",
+  "window.autoDetectColorScheme": true,
+  "breadcrumbs.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.showTabs": "single",
+  "workbench.colorTheme": "Palenight Theme",
+  "workbench.preferredDarkColorTheme": "Palenight Theme",
+  "workbench.preferredLightColorTheme": "Ayu Light",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "vim.smartRelativeLine": true,
+  "vim.useSystemClipboard": true,
+  "vim.handleKeys": {
+    "<C-w>": false,
+    "<C-o>": true,
+    "<C-n>": false,
+    "g": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.rulers": [80]
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.rulers": [80]
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.rulers": [80]
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.rulers": [80]
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.rulers": [80]
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.rulers": [80]
+  },
+  "[python]": {
+    "editor.rulers": [100],
+    "editor.formatOnType": true
+  },
+  "[csharp]": {
+    "editor.rulers": [120],
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true
+  },
+  "omnisharp.organizeImportsOnFormat": true,
+  "workbench.sideBar.location": "right"
+}
