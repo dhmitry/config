@@ -1,7 +1,7 @@
 " https://github.com/JetBrains/ideavim/discussions/303?sort=top#discussioncomment-7664118
 
 " vim settings
-set scrolloff=10
+set scrolloff=10 sidescrolloff=10
 set history=1000
 set number relativenumber
 
@@ -18,7 +18,8 @@ set incsearch
 set ignorecase
 set smartcase
 set gdefault
-nmap <esc> :noh<CR>
+set wrapscan
+nmap <Esc> :noh<CR>
 
 " ideavim settings
 set ideajoin
@@ -85,7 +86,7 @@ nmap <leader>wu <Action>(UnsplitAll)
 nmap <leader>mm <Action>(MainMenu)
 nmap <leader>ma <Action>(AnalyzeMenu)
 nmap <leader>mb <Action>(BuildMenu)
-nmap <leader>mc <Action>(CodeMen)
+nmap <leader>mc <Action>(CodeMenu)
 nmap <leader>mf <Action>(FindMenuGroup)
 nmap <leader>mg <Action>(GoToMenu)
 nmap <leader>ms <Action>(ScopeViewPopupMenu)
@@ -159,7 +160,7 @@ nmap <leader>hm <Action>(MethodHierarchy)
 nmap <leader>ht <Action>(TypeHierarchy)
 
 " collapse
-nmap zz <Action>(ExpandCollapseToggleAction)
+" nmap zz <Action>(ExpandCollapseToggleAction)
 nmap za <Action>(CollapseAllRegions)
 nmap zA <Action>(ExpandAllRegions)
 
@@ -185,6 +186,7 @@ nmap <leader>a <Action>(GotoAction)
 nmap ga <Action>(GotoAction)
 nmap gc <Action>(GotoClass)
 nmap gf <Action>(GotoFile)
+nmap gr <Action>(ShowUsages)
 nmap gs <Action>(GotoSymbol)
 nmap gt <Action>(GotoTest)
 nmap gT <Action>(TextSearchAction)
@@ -194,7 +196,6 @@ nmap gD <Action>(GotoTypeDeclaration)
 nmap gi <Action>(GotoImplementation)
 nmap gI <Action>(QuickImplementations)
 nmap gn <Action>(ShowNavBar)
-nmap gr <Action>(ShowUsages)
 
 " terminal
 nmap <leader>tt <Action>(ActivateTerminalToolWindow)
@@ -221,6 +222,13 @@ nmap <leader>v <Action>(VcsGroups)
 
 " open IdeaVim settings
 nmap \\v <Action>(VimActions)
+
+" continuous shift
+xnoremap < <gv
+xnoremap > >gv
+
+" alias
+nmap <C-a> ggVG"+y
 
 " text-object (bundle plugin)
 set vim-paragraph-motion
@@ -267,10 +275,3 @@ nmap <C-4> :action GotoHarpoon4<CR>
 nmap <C-5> :action GotoHarpoon5<CR>
 
 nmap <leader>sh :action ShowHarpoon<CR>
-
-" continuous shift
-xnoremap < <gv
-xnoremap > >gv
-
-" alias
-nmap <C-a> ggVG"+y
